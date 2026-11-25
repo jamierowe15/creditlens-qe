@@ -1,0 +1,16 @@
+{
+  "name": "get-application",
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/applications/(101|102|103)"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "application-{{request.pathSegments.[2]}}.json",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Correlation-Id": "{{request.headers.X-Correlation-Id}}"
+    }
+  }
+}

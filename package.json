@@ -1,0 +1,12 @@
+{
+  "name": "creditlens-qe-tools",
+  "private": true,
+  "description": "Node-based test tools: WireMock (service virtualization) and axe-core (accessibility rules).",
+  "scripts": {
+    "wiremock": "wiremock --port 8089 --root-dir virtualization --global-response-templating"
+  },
+  "devDependencies": {
+    "axe-core": "^4.11.0",
+    "wiremock": "^3.13.2"
+  }
+}

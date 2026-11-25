@@ -1,0 +1,54 @@
+{
+  "$id": "problem.schema.json",
+  "title": "RFC 9457 problem detail",
+  "type": "object",
+  "required": [
+    "title",
+    "status"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer",
+      "minimum": 400,
+      "maximum": 599
+    },
+    "detail": {
+      "type": "string"
+    },
+    "instance": {
+      "type": "string"
+    },
+    "errors": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "not": {
+    "anyOf": [
+      {
+        "required": [
+          "trace"
+        ]
+      },
+      {
+        "required": [
+          "stackTrace"
+        ]
+      },
+      {
+        "required": [
+          "exception"
+        ]
+      }
+    ]
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

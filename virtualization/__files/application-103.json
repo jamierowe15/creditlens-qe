@@ -1,0 +1,34 @@
+{
+  "id": 103,
+  "referenceNumber": "CL-0000000103",
+  "applicantName": "Virtual Declined",
+  "emailMasked": "v***@example.com",
+  "annualIncome": 85000,
+  "monthlyDebtPayments": 400,
+  "creditScore": 560,
+  "requestedAmount": 7000,
+  "termMonths": 36,
+  "employmentStatus": "UNEMPLOYED",
+  "productType": "PERSONAL_LOAN",
+  "status": "DECLINED",
+  "riskScore": 71,
+  "dtiRatio": 0.1123,
+  "apr": 9.49,
+  "monthlyPayment": 320.28,
+  "approvedAmount": null,
+  "reasons": [
+    {
+      "code": "EMP1",
+      "severity": "DECLINE",
+      "description": "No current employment income"
+    },
+    {
+      "code": "CS01",
+      "severity": "DECLINE",
+      "description": "Credit score is below the 600 minimum"
+    }
+  ],
+  "decidedBy": "CreditLens Engine 2026.11-v1",
+  "createdAt": "2026-11-20T15:04:05Z",
+  "updatedAt": "2026-11-20T15:04:05Z"
+}

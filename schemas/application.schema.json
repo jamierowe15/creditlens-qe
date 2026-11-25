@@ -1,0 +1,130 @@
+{
+  "$id": "application.schema.json",
+  "title": "ApplicationResponse",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "referenceNumber",
+    "applicantName",
+    "emailMasked",
+    "annualIncome",
+    "monthlyDebtPayments",
+    "creditScore",
+    "requestedAmount",
+    "termMonths",
+    "employmentStatus",
+    "productType",
+    "status",
+    "riskScore",
+    "dtiRatio",
+    "apr",
+    "monthlyPayment",
+    "approvedAmount",
+    "reasons",
+    "decidedBy",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "referenceNumber": {
+      "type": "string",
+      "pattern": "^CL-[0-9A-F]{10}$"
+    },
+    "applicantName": {
+      "type": "string"
+    },
+    "emailMasked": {
+      "type": "string",
+      "pattern": "^.\\*{3,}@"
+    },
+    "annualIncome": {
+      "type": "number"
+    },
+    "monthlyDebtPayments": {
+      "type": "number"
+    },
+    "creditScore": {
+      "type": "integer",
+      "minimum": 300,
+      "maximum": 900
+    },
+    "requestedAmount": {
+      "type": "number"
+    },
+    "termMonths": {
+      "type": "integer",
+      "minimum": 6,
+      "maximum": 84
+    },
+    "employmentStatus": {
+      "enum": [
+        "FULL_TIME",
+        "PART_TIME",
+        "SELF_EMPLOYED",
+        "STUDENT",
+        "RETIRED",
+        "UNEMPLOYED"
+      ]
+    },
+    "productType": {
+      "enum": [
+        "PERSONAL_LOAN",
+        "CAR_LOAN",
+        "LINE_OF_CREDIT"
+      ]
+    },
+    "status": {
+      "enum": [
+        "APPROVED",
+        "REFERRED",
+        "DECLINED"
+      ]
+    },
+    "riskScore": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "dtiRatio": {
+      "type": "number",
+      "minimum": 0
+    },
+    "apr": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "monthlyPayment": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "approvedAmount": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "$ref": "reason.schema.json"
+      }
+    },
+    "decidedBy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 102,
+  "referenceNumber": "CL-0000000102",
+  "applicantName": "Virtual Referred",
+  "emailMasked": "v***@example.com",
+  "annualIncome": 85000,
+  "monthlyDebtPayments": 400,
+  "creditScore": 640,
+  "requestedAmount": 12000,
+  "termMonths": 36,
+  "employmentStatus": "FULL_TIME",
+  "productType": "PERSONAL_LOAN",
+  "status": "REFERRED",
+  "riskScore": 38,
+  "dtiRatio": 0.1123,
+  "apr": 9.49,
+  "monthlyPayment": 320.28,
+  "approvedAmount": null,
+  "reasons": [
+    {
+      "code": "CS02",
+      "severity": "REFER",
+      "description": "Credit score is in the 600-659 manual review band"
+    }
+  ],
+  "decidedBy": "CreditLens Engine 2026.11-v1",
+  "createdAt": "2026-11-20T15:04:05Z",
+  "updatedAt": "2026-11-20T15:04:05Z"
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Service level objectives checked after every load test. Times in milliseconds.",
+  "users": 20,
+  "spawn_rate": 5,
+  "run_time": "30s",
+  "max_failure_ratio": 0.0,
+  "p95_ms": {
+    "POST /api/decisions/preview": 300,
+    "POST /api/applications": 500,
+    "GET /api/stats": 300,
+    "GET /api/applications": 400
+  }
+}

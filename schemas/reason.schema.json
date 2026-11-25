@@ -1,0 +1,27 @@
+{
+  "$id": "reason.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "code",
+    "severity",
+    "description"
+  ],
+  "properties": {
+    "code": {
+      "type": "string",
+      "pattern": "^(CS0[12]|DTI[12]|EMP[12]|LTI[12]|INC1)$"
+    },
+    "severity": {
+      "enum": [
+        "REFER",
+        "DECLINE"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 5
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

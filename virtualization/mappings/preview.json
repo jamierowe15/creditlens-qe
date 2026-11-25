@@ -1,0 +1,16 @@
+{
+  "name": "preview",
+  "priority": 10,
+  "request": {
+    "method": "POST",
+    "urlPath": "/api/decisions/preview"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "preview-approved.json",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Correlation-Id": "{{request.headers.X-Correlation-Id}}"
+    }
+  }
+}

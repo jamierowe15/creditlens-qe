@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "action": "AUTO_DECISION",
+    "fromStatus": null,
+    "toStatus": "REFERRED",
+    "actor": "CreditLens Engine 2026.11-v1",
+    "note": "Reasons: CS02",
+    "rulesVersion": "2026.11-v1",
+    "createdAt": "2026-11-20T15:04:05Z"
+  }
+]

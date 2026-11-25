@@ -1,0 +1,10 @@
+# Python test stack (pinned so every run, on every machine, uses the same versions)
+pytest==9.2.0
+pytest-bdd==9.0.1
+pytest-html==4.2.0
+pytest-playwright==0.10.0
+pytest-rerunfailures==16.7
+playwright==1.65.2
+requests==2.34.2
+jsonschema==4.26.0
+locust==2.47.0

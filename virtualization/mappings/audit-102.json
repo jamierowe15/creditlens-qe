@@ -1,0 +1,16 @@
+{
+  "name": "audit-102",
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/applications/102/audit"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "audit-102.json",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Correlation-Id": "{{request.headers.X-Correlation-Id}}"
+    }
+  }
+}

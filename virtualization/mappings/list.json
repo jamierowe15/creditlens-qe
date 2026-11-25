@@ -1,0 +1,16 @@
+{
+  "name": "list",
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPath": "/api/applications"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "applications-page.json",
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Correlation-Id": "{{request.headers.X-Correlation-Id}}"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": 101,
+  "referenceNumber": "CL-0000000101",
+  "applicantName": "Virtual Approved",
+  "emailMasked": "v***@example.com",
+  "annualIncome": 85000,
+  "monthlyDebtPayments": 400,
+  "creditScore": 781,
+  "requestedAmount": 15000,
+  "termMonths": 36,
+  "employmentStatus": "FULL_TIME",
+  "productType": "CAR_LOAN",
+  "status": "APPROVED",
+  "riskScore": 12,
+  "dtiRatio": 0.1123,
+  "apr": 9.49,
+  "monthlyPayment": 320.28,
+  "approvedAmount": 15000,
+  "reasons": [],
+  "decidedBy": "CreditLens Engine 2026.11-v1",
+  "createdAt": "2026-11-20T15:04:05Z",
+  "updatedAt": "2026-11-20T15:04:05Z"
+}

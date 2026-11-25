@@ -1,0 +1,67 @@
+{
+  "$id": "audit.schema.json",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "action",
+      "fromStatus",
+      "toStatus",
+      "actor",
+      "note",
+      "rulesVersion",
+      "createdAt"
+    ],
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "action": {
+        "enum": [
+          "AUTO_DECISION",
+          "MANUAL_REVIEW"
+        ]
+      },
+      "fromStatus": {
+        "anyOf": [
+          {
+            "enum": [
+              "APPROVED",
+              "REFERRED",
+              "DECLINED"
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "toStatus": {
+        "enum": [
+          "APPROVED",
+          "REFERRED",
+          "DECLINED"
+        ]
+      },
+      "actor": {
+        "type": "string"
+      },
+      "note": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "rulesVersion": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

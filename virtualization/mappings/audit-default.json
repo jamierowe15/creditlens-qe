@@ -1,0 +1,16 @@
+{
+  "name": "audit-default",
+  "priority": 10,
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/api/applications/(101|103)/audit"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [],
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Correlation-Id": "{{request.headers.X-Correlation-Id}}"
+    }
+  }
+}

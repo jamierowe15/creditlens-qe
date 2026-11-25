@@ -1,0 +1,42 @@
+{
+  "$id": "stats.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "total",
+    "approved",
+    "referred",
+    "declined",
+    "approvalRatePercent",
+    "averageCreditScore"
+  ],
+  "properties": {
+    "total": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "approved": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "referred": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "declined": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "approvalRatePercent": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "averageCreditScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 900
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

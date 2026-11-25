@@ -1,0 +1,10 @@
+{
+  "outcome": "APPROVED",
+  "riskScore": 28,
+  "dtiRatio": 0.133,
+  "apr": 9.49,
+  "monthlyPayment": 320.28,
+  "approvedAmount": 10000,
+  "reasons": [],
+  "rulesVersion": "2026.11-v1"
+}
